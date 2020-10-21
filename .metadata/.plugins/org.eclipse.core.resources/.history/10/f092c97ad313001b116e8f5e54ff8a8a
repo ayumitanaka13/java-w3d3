@@ -47,7 +47,7 @@ public class Driver {
 				bookArray[i].getFirstName() + " " +
 				bookArray[i].getLastName() + " " +
 				bookArray[i].getPublishedYear() + " " +
-				String.format("%.2f", bookArray[i].getTotalPrice())
+				bookArray[i].getTotalPrice()
 				);
 		}
 	}
