@@ -12,8 +12,7 @@ public class Student {
 	
 	private String firstName;
 	private String lastName;
-	private double midTermScore; // 30%
-	private double finalScore; // 70%
+	private double score;
 
 	public Student(String firstName, String lastName, double score) {
 		if (firstName == "" || firstName == null) {
@@ -26,14 +25,11 @@ public class Student {
 		} else {
 			this.lastName = lastName;
 		}
-		this.midTermScore = 0;
-		this.finalScore = 0;
+		this.score = 0;
 	}
 	
 	// Instance variable + this.
 	
-	
-	// GETTER
 	
 	/*
 	 *  @return first name
@@ -49,20 +45,11 @@ public class Student {
 	}
 	
 	/*
-	 * @ return mid score
+	 * @ return score
 	 */
-	public double getMidTermScore() {
-		return this.midTermScore;
+	public double getScore() {
+		return this.score;
 	}
-	
-	/*
-	 * @ return final score
-	 */
-	public double getfinalScore() {
-		return this.finalScore;
-	}
-	
-	// SETTER
 	
 	/*
 	 *  Set the first name
@@ -89,25 +76,9 @@ public class Student {
 	
 	/*
 	 * Set the score
-	 * @param midTermScore
+	 * @param firstName
 	 */
-	public void setMidTermScore(double midTermScore) {
-		this.midTermScore = midTermScore;
-	}
-	/*
-	 * Set the score
-	 * @param finalScore
-	 */
-	public void setFinalScore(double finalScore) {
-		this.finalScore = finalScore;
-	}
-	/*
-	 * calculate total score
-	 * @return total score
-	 */
-	public double getTotalScore() {
-		double total = 
-				(this.midTermScore * 30) + (this.finalScore * 70) / 100;
-		return total;
+	public void setScore(double score) {
+		this.score = score;
 	}
 }

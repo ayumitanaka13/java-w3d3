@@ -56,19 +56,18 @@ public class Driver {
 		
 		Book[] bookArray = new Book[3];
 		
-		bookArray[0] = new Book("ABC", null, "", 1889, 10.0);
+		bookArray[0] = new Book("ABC", null, "", 1889, 10);
 		bookArray[1] = new Book("Canadian History", "Jane", "Dew", 2020, 25.5);
 		bookArray[2] = new Book("English Grammar", "Albeta", "Dow", 1999, 30.3);
 		
 		printBook(bookArray);
 		
-		// updating the info
 		bookArray[0] .setFirstName("Ayumi");
 		bookArray[0] .setLastName("Tanaka");
 		bookArray[1] .setBookTitle("Japanese History");
 		bookArray[2] .setPublishedYear(1999);
 
-		// updating the setPrice
+		// updating the midTermScore
 		bookArray[0] .setPrice(20.5);
 		bookArray[1] .setPrice(19.7);
 		bookArray[2] .setPrice(18.2);

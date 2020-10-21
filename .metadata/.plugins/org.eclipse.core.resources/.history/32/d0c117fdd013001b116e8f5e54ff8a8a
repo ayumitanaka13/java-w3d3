@@ -56,7 +56,7 @@ public class Driver {
 		
 		Book[] bookArray = new Book[3];
 		
-		bookArray[0] = new Book("ABC", null, "", 1889, 10.0);
+		bookArray[0] = new Book("ABC", null, "", 1889, 10);
 		bookArray[1] = new Book("Canadian History", "Jane", "Dew", 2020, 25.5);
 		bookArray[2] = new Book("English Grammar", "Albeta", "Dow", 1999, 30.3);
 		

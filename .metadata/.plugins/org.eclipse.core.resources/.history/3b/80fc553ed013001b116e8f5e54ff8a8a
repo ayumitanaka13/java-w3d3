@@ -9,26 +9,26 @@ public class Book {
 
 	public Book(String bookTitle, String firstName, String lastName, int publishedYear, double price) {
 		if(bookTitle == "" || bookTitle == null) {
-			this.bookTitle = "Unkown";
+			bookTitle = "Unkown";
 		} else {
-			this.bookTitle = bookTitle;
+			bookTitle = this.bookTitle;
 		}
 		if (firstName == "" || firstName == null) {
-			this.firstName = "John";
+			firstName = "John";
 		} else {
-			this.firstName = firstName;
+			firstName = this.firstName;
 		}
 		if (lastName == "" || lastName == null) {
-			this.lastName = "Doe";
+			lastName = "Doe";
 		} else {
-			this.lastName = lastName;
+			lastName = this.lastName;
 		}
 		if(publishedYear < 1900) {
-			this.publishedYear = 1900;
+			publishedYear = 1900;
 		} else {
-			this.publishedYear = publishedYear;
-		}if(price > 0) {
-			this.price = price;
+			publishedYear = this.publishedYear;
+		}if(true) {
+			price = this.price;
 		}
 	}
 	
@@ -36,31 +36,31 @@ public class Book {
 	 *  @return title
 	 */
 	public String getBookTitle() {
-		return bookTitle;
+		return this.bookTitle;
 	}
 	/*
 	 *  @return first name
 	 */
 	public String getFirstName() {
-		return firstName;
+		return this.firstName;
 	}
 	/*
 	 *  @return last name
 	 */
 	public String getLastName() {
-		return lastName;
+		return this.lastName;
 	}
 	/*
 	 *  @return year
 	 */
 	public int getPublishedYear() {
-		return publishedYear;
+		return this.publishedYear;
 	}
 	/*
 	 *  @return price
 	 */
 	public double getPrice() {
-		return price;
+		return this.price;
 	}
 	
 	
@@ -72,7 +72,7 @@ public class Book {
 		if(bookTitle == "" || bookTitle == null) {
 			bookTitle = "Unkown";
 		} else {
-			this.bookTitle = bookTitle;
+			bookTitle = this.bookTitle;
 		}
 	}
 	/*
@@ -82,7 +82,7 @@ public class Book {
 		if(firstName == "" || firstName == null) {
 			firstName = "John";
 		} else {
-			this.firstName = firstName;
+			firstName = this.firstName;
 		}
 	}
 	/*
@@ -92,7 +92,7 @@ public class Book {
 		if(lastName=="" || lastName == null) {
 			lastName = "Doe";
 		} else {
-			this.lastName = lastName;
+			lastName = this.lastName;
 		}
 	}
 	/*
@@ -102,14 +102,14 @@ public class Book {
 		if(publishedYear < 1900) {
 			publishedYear = 1900;
 		} else {
-			this.publishedYear = publishedYear;
+			publishedYear = this.publishedYear;
 		}
 	}
 	/*
 	 *  Set the price
 	 */
 	public void setPrice(double price) {
-		this.price = price;
+		price = this.price;
 	}
 	
 	/*
@@ -117,7 +117,7 @@ public class Book {
 	 */
 	public double getTotalPrice() {
 		double total = 
-				this.price * 1.12;
+				(this.price * 12) / 100;
 		return total;
 	}
 }
